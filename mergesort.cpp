@@ -29,13 +29,9 @@ void merge (vector<int> &vec, int start, int end){
     else if (i<(j-mid)){
         temp.insert(temp.end(),vec.begin()+i,vec.begin()+mid);
     }
-    cout<<start<<"\t"<<end<<endl;
-    cout<<"--------"<<endl;
     for (int i = start; i<end;i++){
         vec[i] = temp[i-start];
-        cout<<i<<"\t"<<i-start<<endl;
     }
-    cout<<"#######"<<endl;
 }
 
 void merge_sort(vector<int> &vec, int start, int end){
